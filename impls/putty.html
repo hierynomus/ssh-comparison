@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>PuTTY</title>
+  <meta name="description" content="A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/impls/putty.html">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">SSH implementation comparision</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<h2 id="putty">PuTTY</h2>
+
+<ul>
+  <li>Homepage: <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">http://www.chiark.greenend.org.uk/~sgtatham/putty/</a></li>
+  <li>Latest release: 0.64 (2014-11-06)</li>
+  <li>Client: true</li>
+  <li>Server: true</li>
+</ul>
+
+<h2 id="supported-protocols">Supported protocols</h2>
+
+<h3 id="ciphers">Ciphers</h3>
+
+<ul>
+  <li>
+    <p>3des-cbc</p>
+  </li>
+  <li>
+    <p>3des-ctr</p>
+  </li>
+  <li>
+    <p>des-cbc</p>
+  </li>
+  <li>
+    <p>des-cbc@ssh.com</p>
+  </li>
+  <li>
+    <p>aes128-ctr</p>
+  </li>
+  <li>
+    <p>aes192-ctr</p>
+  </li>
+  <li>
+    <p>aes256-ctr</p>
+  </li>
+  <li>
+    <p>aes128-cbc</p>
+  </li>
+  <li>
+    <p>aes192-cbc</p>
+  </li>
+  <li>
+    <p>aes256-cbc</p>
+  </li>
+  <li>
+    <p>rijndael-cbc@lysator.liu.se</p>
+  </li>
+  <li>
+    <p>arcfour128</p>
+  </li>
+  <li>
+    <p>arcfour256</p>
+  </li>
+  <li>
+    <p>blowfish-cbc</p>
+  </li>
+  <li>
+    <p>blowfish-ctr</p>
+  </li>
+</ul>
+
+<h3 id="compression">Compression</h3>
+
+<ul>
+  <li>
+    <p>zlib</p>
+  </li>
+  <li>
+    <p>zlib@openssh.com</p>
+  </li>
+  <li>
+    <p>none</p>
+  </li>
+</ul>
+
+<h3 id="hostkey">Hostkey</h3>
+
+<ul>
+  <li>
+    <p>ssh-rsa</p>
+  </li>
+  <li>
+    <p>ssh-dss</p>
+  </li>
+  <li>
+    <p>ecdsa-sha2-nistp256</p>
+  </li>
+  <li>
+    <p>ecdsa-sha2-nistp384</p>
+  </li>
+  <li>
+    <p>ecdsa-sha2-nistp521</p>
+  </li>
+</ul>
+
+<h3 id="key-exchange">Key exchange</h3>
+
+<ul>
+  <li>
+    <p>diffie-hellman-group1-sha1</p>
+  </li>
+  <li>
+    <p>diffie-hellman-group14-sha1</p>
+  </li>
+  <li>
+    <p>diffie-hellman-group-exchange-sha256</p>
+  </li>
+  <li>
+    <p>diffie-hellman-group-exchange-sha1</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp256</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp384</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp521</p>
+  </li>
+</ul>
+
+<h3 id="mac">MAC</h3>
+
+<ul>
+  <li>
+    <p>hmac-md5</p>
+  </li>
+  <li>
+    <p>hmac-sha1</p>
+  </li>
+  <li>
+    <p>hmac-sha1-96</p>
+  </li>
+  <li>
+    <p>hmac-sha2-256</p>
+  </li>
+</ul>
+
+<h3 id="userauth">Userauth</h3>
+
+<ul>
+  <li>
+    <p>publickey</p>
+  </li>
+  <li>
+    <p>password</p>
+  </li>
+  <li>
+    <p>keyboard-interactive</p>
+  </li>
+  <li>
+    <p>gssapi-with-mic</p>
+  </li>
+  <li>
+    <p>none</p>
+  </li>
+</ul>
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">SSH implementation comparision</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>SSH implementation comparision</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+bla
+
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
