@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>libssh2</title>
+  <title>Apache SSHD</title>
   <meta name="description" content="A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/impls/libssh2.html">
+  <link rel="canonical" href="/impls/apache-sshd.html">
 </head>
 
 
@@ -75,11 +75,11 @@
     <div class="page-content">
       <div class="wrapper">
         
-<h2 id="libssh2">libssh2</h2>
+<h2 id="apache-sshd">Apache SSHD</h2>
 
 <ul>
-  <li>Homepage: <a href="http://www.libssh2.org/">http://www.libssh2.org/</a></li>
-  <li>Latest release: 1.4.3 (2012-11-27)</li>
+  <li>Homepage: <a href="http://mina.apache.org/sshd-project/">http://mina.apache.org/sshd-project/</a></li>
+  <li>Latest release: 0.13.0 (unknown)</li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
@@ -90,28 +90,34 @@
 
 <ul>
   <li>
-    <p>aes256-cbc</p>
+    <p>aes128-ctr</p>
   </li>
   <li>
-    <p>rijndael-cbc@lysator.liu.se</p>
+    <p>aes192-ctr</p>
   </li>
   <li>
-    <p>aes192-cbc</p>
+    <p>aes256-ctr</p>
   </li>
   <li>
     <p>aes128-cbc</p>
   </li>
   <li>
-    <p>3des-cbc</p>
+    <p>aes192-cbc</p>
+  </li>
+  <li>
+    <p>aes256-cbc</p>
+  </li>
+  <li>
+    <p>arcfour128</p>
+  </li>
+  <li>
+    <p>arcfour256</p>
   </li>
   <li>
     <p>blowfish-cbc</p>
   </li>
   <li>
-    <p>cast128-cbc</p>
-  </li>
-  <li>
-    <p>arcfour</p>
+    <p>3des-cbc</p>
   </li>
   <li>
     <p>none</p>
@@ -141,6 +147,15 @@
   <li>
     <p>ssh-dss</p>
   </li>
+  <li>
+    <p>ecdsa-sha2-nistp256</p>
+  </li>
+  <li>
+    <p>ecdsa-sha2-nistp384</p>
+  </li>
+  <li>
+    <p>ecdsa-sha2-nistp521</p>
+  </li>
 </ul>
 
 <h3 id="key-exchange">Key exchange</h3>
@@ -155,17 +170,23 @@
   <li>
     <p>diffie-hellman-group-exchange-sha1</p>
   </li>
+  <li>
+    <p>diffie-hellman-group-exchange-sha256</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp256</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp384</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp521</p>
+  </li>
 </ul>
 
 <h3 id="mac">MAC</h3>
 
 <ul>
-  <li>
-    <p>hmac-sha1</p>
-  </li>
-  <li>
-    <p>hmac-sha1-96</p>
-  </li>
   <li>
     <p>hmac-md5</p>
   </li>
@@ -173,19 +194,25 @@
     <p>hmac-md5-96</p>
   </li>
   <li>
-    <p>hmac-ripemd160</p>
+    <p>hmac-sha1</p>
   </li>
   <li>
-    <p>hmac-ripemd160@openssh.com</p>
+    <p>hmac-sha1-96</p>
   </li>
   <li>
-    <p>none</p>
+    <p>hmac-sha2-256</p>
+  </li>
+  <li>
+    <p>hmac-sha2-512</p>
   </li>
 </ul>
 
 <h3 id="userauth">Userauth</h3>
 
 <ul>
+  <li>
+    <p>keyboard-interactive</p>
+  </li>
   <li>
     <p>none</p>
   </li>
@@ -196,10 +223,7 @@
     <p>publickey</p>
   </li>
   <li>
-    <p>hostbased</p>
-  </li>
-  <li>
-    <p>keyboard-interactive</p>
+    <p>gssapi-with-mic</p>
   </li>
 </ul>
 
