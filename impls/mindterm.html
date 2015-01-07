@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>lsh</title>
+  <title>MindTerm</title>
   <meta name="description" content="A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/impls/lsh.html">
+  <link rel="canonical" href="/impls/mindterm.html">
 </head>
 
 
@@ -81,11 +81,11 @@
     <div class="page-content">
       <div class="wrapper">
         
-<h2 id="lsh">lsh</h2>
+<h2 id="mindterm">MindTerm</h2>
 
 <ul>
-  <li>Homepage: <a href="http://www.lysator.liu.se/~nisse/lsh/">http://www.lysator.liu.se/~nisse/lsh/</a></li>
-  <li>Latest release: 2.1 (2013-06-26)</li>
+  <li>Homepage: <a href="http://www.cryptzone.com/products/mindterm/">http://www.cryptzone.com/products/mindterm/</a></li>
+  <li>Latest release: 4.1.5 (2014-04-01)</li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
@@ -99,43 +99,40 @@
     <p>3des-cbc</p>
   </li>
   <li>
+    <p>3des-ecb</p>
+  </li>
+  <li>
+    <p>3des-cfb</p>
+  </li>
+  <li>
+    <p>3des-ofb</p>
+  </li>
+  <li>
     <p>3des-ctr</p>
   </li>
   <li>
     <p>blowfish-cbc</p>
   </li>
   <li>
+    <p>blowfish-ecb</p>
+  </li>
+  <li>
+    <p>blowfish-cfb</p>
+  </li>
+  <li>
+    <p>blowfish-ofb</p>
+  </li>
+  <li>
     <p>blowfish-ctr</p>
   </li>
   <li>
-    <p>twofish256-cbc</p>
-  </li>
-  <li>
-    <p>twofish-cbc</p>
-  </li>
-  <li>
-    <p>twofish128-cbc</p>
-  </li>
-  <li>
-    <p>twofish192-cbc</p>
-  </li>
-  <li>
-    <p>twofish128-ctr</p>
-  </li>
-  <li>
-    <p>twofish192-ctr</p>
-  </li>
-  <li>
-    <p>twofish256-ctr</p>
-  </li>
-  <li>
-    <p>aes256-cbc</p>
+    <p>aes128-cbc</p>
   </li>
   <li>
     <p>aes192-cbc</p>
   </li>
   <li>
-    <p>aes128-cbc</p>
+    <p>aes256-cbc</p>
   </li>
   <li>
     <p>aes128-ctr</p>
@@ -147,31 +144,79 @@
     <p>aes256-ctr</p>
   </li>
   <li>
-    <p>serpent256-cbc</p>
+    <p>rijndael128-cbc</p>
   </li>
   <li>
-    <p>serpent192-cbc</p>
+    <p>rijndael192-cbc</p>
   </li>
   <li>
-    <p>serpent128-cbc</p>
+    <p>rijndael256-cbc</p>
   </li>
   <li>
-    <p>serpent128-ctr</p>
+    <p>rijndael-cbc@lysator.liu.se</p>
   </li>
   <li>
-    <p>serpent192-ctr</p>
+    <p>twofish128-ctr</p>
   </li>
   <li>
-    <p>serpent256-ctr</p>
+    <p>twofish128-cbc</p>
   </li>
   <li>
-    <p>arcfour</p>
+    <p>twofish192-ctr</p>
+  </li>
+  <li>
+    <p>twofish192-cbc</p>
+  </li>
+  <li>
+    <p>twofish256-ctr</p>
+  </li>
+  <li>
+    <p>twofish256-cbc</p>
+  </li>
+  <li>
+    <p>twofish-cbc</p>
+  </li>
+  <li>
+    <p>twofish-ecb</p>
+  </li>
+  <li>
+    <p>twofish-cfb</p>
+  </li>
+  <li>
+    <p>twofish-ofb</p>
   </li>
   <li>
     <p>cast128-cbc</p>
   </li>
   <li>
-    <p>cast128-ctr</p>
+    <p>cast128-ecb</p>
+  </li>
+  <li>
+    <p>cast128-cfb</p>
+  </li>
+  <li>
+    <p>cast128-ofb</p>
+  </li>
+  <li>
+    <p>idea-cbc</p>
+  </li>
+  <li>
+    <p>idea-ecb</p>
+  </li>
+  <li>
+    <p>idea-cfb</p>
+  </li>
+  <li>
+    <p>idea-ofb</p>
+  </li>
+  <li>
+    <p>arcfour</p>
+  </li>
+  <li>
+    <p>arcfour128</p>
+  </li>
+  <li>
+    <p>arcfour256</p>
   </li>
 </ul>
 
@@ -182,6 +227,9 @@
     <p>zlib</p>
   </li>
   <li>
+    <p>zlib@openssh.com</p>
+  </li>
+  <li>
     <p>none</p>
   </li>
 </ul>
@@ -190,22 +238,19 @@
 
 <ul>
   <li>
-    <p>ssh-dss</p>
-  </li>
-  <li>
     <p>ssh-rsa</p>
   </li>
   <li>
-    <p>ssh-dsa</p>
+    <p>ssh-dss</p>
   </li>
   <li>
-    <p>ssh-dsa-sha256@lysator.liu.se</p>
+    <p>ecdsa-sha2-nistp256</p>
   </li>
   <li>
-    <p>spki-sign-rsa</p>
+    <p>ecdsa-sha2-nistp384</p>
   </li>
   <li>
-    <p>spki-sign-dss</p>
+    <p>ecdsa-sha2-nistp521</p>
   </li>
 </ul>
 
@@ -218,6 +263,21 @@
   <li>
     <p>diffie-hellman-group14-sha1</p>
   </li>
+  <li>
+    <p>diffie-hellman-group-exchange-sha1</p>
+  </li>
+  <li>
+    <p>diffie-hellman-group-exchange-sha256</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp256</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp384</p>
+  </li>
+  <li>
+    <p>ecdh-sha2-nistp521</p>
+  </li>
 </ul>
 
 <h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
@@ -227,10 +287,37 @@
     <p>hmac-sha1</p>
   </li>
   <li>
+    <p>hmac-md5</p>
+  </li>
+  <li>
+    <p>hmac-ripemd160</p>
+  </li>
+  <li>
     <p>hmac-sha1-96</p>
   </li>
   <li>
-    <p>hmac-md5</p>
+    <p>hmac-md5-96</p>
+  </li>
+  <li>
+    <p>hmac-ripemd160-96</p>
+  </li>
+  <li>
+    <p>hmac-ripemd160@openssh.com</p>
+  </li>
+  <li>
+    <p>hmac-sha2-256</p>
+  </li>
+  <li>
+    <p>hmac-sha2-512</p>
+  </li>
+  <li>
+    <p>hmac-sha256@ssh.com</p>
+  </li>
+  <li>
+    <p>hmac-sha256-2@ssh.com</p>
+  </li>
+  <li>
+    <p>hmac-sha512@ssh.com</p>
   </li>
 </ul>
 
@@ -238,19 +325,40 @@
 
 <ul>
   <li>
+    <p>rhosts</p>
+  </li>
+  <li>
     <p>publickey</p>
   </li>
   <li>
     <p>password</p>
   </li>
   <li>
-    <p>hostbased</p>
+    <p>rhostsrsa</p>
+  </li>
+  <li>
+    <p>tis</p>
+  </li>
+  <li>
+    <p>kerberos</p>
+  </li>
+  <li>
+    <p>kerbtgt</p>
+  </li>
+  <li>
+    <p>securid</p>
+  </li>
+  <li>
+    <p>cryptocard</p>
   </li>
   <li>
     <p>keyboard-interactive</p>
   </li>
   <li>
-    <p>gssapi</p>
+    <p>hostbased</p>
+  </li>
+  <li>
+    <p>gssapi-with-mic”</p>
   </li>
 </ul>
 
