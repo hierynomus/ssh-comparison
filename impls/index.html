@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>PuTTY</title>
+  <title>SSH implementation comparision</title>
   <meta name="description" content="A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/impls/putty.html">
+  <link rel="canonical" href="/impls/">
 </head>
 
 
@@ -76,171 +76,73 @@
 
     <div class="page-content">
       <div class="wrapper">
-        
-<h2 id="putty">PuTTY</h2>
+        <div class="home">
+
+  <h1 class="page-heading">Implementations</h1>
+  
+  The following implementations are currently covered:
 
 <ul>
-  <li>Homepage: <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">http://www.chiark.greenend.org.uk/~sgtatham/putty/</a></li>
-  <li>Latest release: 0.64 (2014-11-06)</li>
-  <li>Client: true</li>
-  <li>Server: true</li>
+
+  <li>
+    <a href="apache-sshd.html">Apache SSHD</a>
+  </li>
+
+  <li>
+    <a href="dropbear.html">Dropbear</a>
+  </li>
+
+  <li>
+    <a href="erlang.html">Erlang ssh library</a>
+  </li>
+
+  <li>
+    <a href="jsch.html">JSch</a>
+  </li>
+
+  <li>
+    <a href="libssh.html">libssh</a>
+  </li>
+
+  <li>
+    <a href="libssh2.html">libssh2</a>
+  </li>
+
+  <li>
+    <a href="lsh.html">lsh</a>
+  </li>
+
+  <li>
+    <a href="openssh.html">OpenSSH</a>
+  </li>
+
+  <li>
+    <a href="putty.html">PuTTY</a>
+  </li>
+
+  <li>
+    <a href="ssh-net.html">SSH.NET</a>
+  </li>
+
+  <li>
+    <a href="tectia-ssh.html">Tectia SSH</a>
+  </li>
+
+  <li>
+    <a href="tinyssh.html">TinySSH</a>
+  </li>
+
 </ul>
 
-<h2 id="supported-protocols">Supported protocols</h2>
+<p>
+<a href='../comparison.html'>Visit the comparison page.</a>
+</p>
 
-<h3 id="ciphers">Ciphers</h3>
+<p>
+<a href='https://github.com/fingolfin/ssh-comparison'>Source code for this site.</a>
+</p>
 
-<ul>
-  <li>
-    <p>3des-cbc</p>
-  </li>
-  <li>
-    <p>3des-ctr</p>
-  </li>
-  <li>
-    <p>des-cbc</p>
-  </li>
-  <li>
-    <p>des-cbc@ssh.com</p>
-  </li>
-  <li>
-    <p>aes128-ctr</p>
-  </li>
-  <li>
-    <p>aes192-ctr</p>
-  </li>
-  <li>
-    <p>aes256-ctr</p>
-  </li>
-  <li>
-    <p>aes128-cbc</p>
-  </li>
-  <li>
-    <p>aes192-cbc</p>
-  </li>
-  <li>
-    <p>aes256-cbc</p>
-  </li>
-  <li>
-    <p>rijndael-cbc@lysator.liu.se</p>
-  </li>
-  <li>
-    <p>arcfour128</p>
-  </li>
-  <li>
-    <p>arcfour256</p>
-  </li>
-  <li>
-    <p>blowfish-cbc</p>
-  </li>
-  <li>
-    <p>blowfish-ctr</p>
-  </li>
-</ul>
-
-<h3 id="compression-formats">Compression formats</h3>
-
-<ul>
-  <li>
-    <p>zlib</p>
-  </li>
-  <li>
-    <p>zlib@openssh.com</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
-
-<h3 id="hostkey-formats">Hostkey formats</h3>
-
-<ul>
-  <li>
-    <p>ssh-rsa</p>
-  </li>
-  <li>
-    <p>ssh-dss</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp521</p>
-  </li>
-</ul>
-
-<h3 id="key-exchange-protocols">Key exchange protocols</h3>
-
-<ul>
-  <li>
-    <p>diffie-hellman-group1-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group14-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group-exchange-sha256</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group-exchange-sha1</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp521</p>
-  </li>
-  <li>
-    <p>rsa1024-sha1</p>
-  </li>
-  <li>
-    <p>rsa2048-sha256</p>
-  </li>
-</ul>
-
-<h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
-
-<ul>
-  <li>
-    <p>hmac-md5</p>
-  </li>
-  <li>
-    <p>hmac-sha1</p>
-  </li>
-  <li>
-    <p>hmac-sha1-96</p>
-  </li>
-  <li>
-    <p>hmac-sha2-256</p>
-  </li>
-</ul>
-
-<h3 id="user-authentication-methods">User authentication methods</h3>
-
-<ul>
-  <li>
-    <p>publickey</p>
-  </li>
-  <li>
-    <p>password</p>
-  </li>
-  <li>
-    <p>keyboard-interactive</p>
-  </li>
-  <li>
-    <p>gssapi-with-mic</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
-
+</div>
 
       </div>
     </div>
