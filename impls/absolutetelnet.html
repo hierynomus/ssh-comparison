@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>Apache SSHD</title>
+  <title>AbsoluteTelnet</title>
   <meta name="description" content="A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/impls/apache-sshd.html">
+  <link rel="canonical" href="/impls/absolutetelnet.html">
 </head>
 
 
@@ -32,11 +32,11 @@
     <div class="page-content">
       <div class="wrapper">
         
-<h2 id="apache-sshd">Apache SSHD</h2>
+<h2 id="absolutetelnet">AbsoluteTelnet</h2>
 
 <ul>
-  <li>Homepage: <a href="http://mina.apache.org/sshd-project/">http://mina.apache.org/sshd-project/</a></li>
-  <li>Latest release: 0.13.0 (unknown)</li>
+  <li>Homepage: <a href="https://celestialsoftware.net/">https://celestialsoftware.net/</a></li>
+  <li>Latest release: 9.84 (2015-02-03)</li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
@@ -65,6 +65,21 @@
     <p>aes256-cbc</p>
   </li>
   <li>
+    <p>3des-cbc</p>
+  </li>
+  <li>
+    <p>3des-ctr</p>
+  </li>
+  <li>
+    <p>twofish128-cbc</p>
+  </li>
+  <li>
+    <p>twofish256-cbc</p>
+  </li>
+  <li>
+    <p>arcfour</p>
+  </li>
+  <li>
     <p>arcfour128</p>
   </li>
   <li>
@@ -74,10 +89,7 @@
     <p>blowfish-cbc</p>
   </li>
   <li>
-    <p>3des-cbc</p>
-  </li>
-  <li>
-    <p>none</p>
+    <p>cast128-cbc</p>
   </li>
 </ul>
 
@@ -104,15 +116,6 @@
   <li>
     <p>ssh-dss</p>
   </li>
-  <li>
-    <p>ecdsa-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp521</p>
-  </li>
 </ul>
 
 <h3 id="key-exchange-protocols">Key exchange protocols</h3>
@@ -129,15 +132,6 @@
   </li>
   <li>
     <p>diffie-hellman-group-exchange-sha256</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp521</p>
   </li>
 </ul>
 
@@ -168,19 +162,22 @@
 
 <ul>
   <li>
-    <p>keyboard-interactive</p>
-  </li>
-  <li>
-    <p>none</p>
+    <p>publickey</p>
   </li>
   <li>
     <p>password</p>
   </li>
   <li>
-    <p>publickey</p>
+    <p>keyboard-interactive</p>
   </li>
   <li>
     <p>gssapi-with-mic</p>
+  </li>
+  <li>
+    <p>hostbased</p>
+  </li>
+  <li>
+    <p>none</p>
   </li>
 </ul>
 

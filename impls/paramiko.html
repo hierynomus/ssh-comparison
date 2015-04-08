@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>Apache SSHD</title>
+  <title>Paramiko</title>
   <meta name="description" content="A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/impls/apache-sshd.html">
+  <link rel="canonical" href="/impls/paramiko.html">
 </head>
 
 
@@ -32,11 +32,11 @@
     <div class="page-content">
       <div class="wrapper">
         
-<h2 id="apache-sshd">Apache SSHD</h2>
+<h2 id="paramiko">Paramiko</h2>
 
 <ul>
-  <li>Homepage: <a href="http://mina.apache.org/sshd-project/">http://mina.apache.org/sshd-project/</a></li>
-  <li>Latest release: 0.13.0 (unknown)</li>
+  <li>Homepage: <a href="http://www.paramiko.org/">http://www.paramiko.org/</a></li>
+  <li>Latest release: 1.15.2 (2014-12-19)</li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
@@ -50,19 +50,19 @@
     <p>aes128-ctr</p>
   </li>
   <li>
-    <p>aes192-ctr</p>
+    <p>aes256-ctr</p>
   </li>
   <li>
-    <p>aes256-ctr</p>
+    <p>blowfish-cbc</p>
   </li>
   <li>
     <p>aes128-cbc</p>
   </li>
   <li>
-    <p>aes192-cbc</p>
+    <p>aes256-cbc</p>
   </li>
   <li>
-    <p>aes256-cbc</p>
+    <p>3des-cbc</p>
   </li>
   <li>
     <p>arcfour128</p>
@@ -70,25 +70,16 @@
   <li>
     <p>arcfour256</p>
   </li>
-  <li>
-    <p>blowfish-cbc</p>
-  </li>
-  <li>
-    <p>3des-cbc</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
 </ul>
 
 <h3 id="compression-formats">Compression formats</h3>
 
 <ul>
   <li>
-    <p>zlib</p>
+    <p>zlib@openssh.com</p>
   </li>
   <li>
-    <p>zlib@openssh.com</p>
+    <p>zlib</p>
   </li>
   <li>
     <p>none</p>
@@ -107,12 +98,6 @@
   <li>
     <p>ecdsa-sha2-nistp256</p>
   </li>
-  <li>
-    <p>ecdsa-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp521</p>
-  </li>
 </ul>
 
 <h3 id="key-exchange-protocols">Key exchange protocols</h3>
@@ -128,16 +113,13 @@
     <p>diffie-hellman-group-exchange-sha1</p>
   </li>
   <li>
-    <p>diffie-hellman-group-exchange-sha256</p>
+    <p>gss-group1-sha1-*</p>
   </li>
   <li>
-    <p>ecdh-sha2-nistp256</p>
+    <p>gss-group14-sha1-*</p>
   </li>
   <li>
-    <p>ecdh-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp521</p>
+    <p>gss-gex-sha1-*</p>
   </li>
 </ul>
 
@@ -145,22 +127,16 @@
 
 <ul>
   <li>
-    <p>hmac-md5</p>
-  </li>
-  <li>
-    <p>hmac-md5-96</p>
-  </li>
-  <li>
     <p>hmac-sha1</p>
   </li>
   <li>
     <p>hmac-sha1-96</p>
   </li>
   <li>
-    <p>hmac-sha2-256</p>
+    <p>hmac-md5</p>
   </li>
   <li>
-    <p>hmac-sha2-512</p>
+    <p>hmac-md5-96</p>
   </li>
 </ul>
 
@@ -168,19 +144,22 @@
 
 <ul>
   <li>
-    <p>keyboard-interactive</p>
-  </li>
-  <li>
-    <p>none</p>
+    <p>publickey</p>
   </li>
   <li>
     <p>password</p>
   </li>
   <li>
-    <p>publickey</p>
+    <p>keyboard-interactive</p>
   </li>
   <li>
     <p>gssapi-with-mic</p>
+  </li>
+  <li>
+    <p>gssapi-keyex</p>
+  </li>
+  <li>
+    <p>none</p>
   </li>
 </ul>
 
