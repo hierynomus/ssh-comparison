@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>MindTerm</title>
+  <title>SmartFTP</title>
   <meta name="description" content="A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/impls/mindterm.html">
+  <link rel="canonical" href="/impls/smartftp.html">
 </head>
 
 
@@ -32,11 +32,11 @@
     <div class="page-content">
       <div class="wrapper">
         
-<h2 id="mindterm">MindTerm</h2>
+<h2 id="smartftp">SmartFTP</h2>
 
 <ul>
-  <li>Homepage: <a href="http://www.cryptzone.com/products/mindterm/">http://www.cryptzone.com/products/mindterm/</a></li>
-  <li>Latest release: 4.1.5 (2014-04-01)</li>
+  <li>Homepage: <a href="https://www.smartftp.com/">https://www.smartftp.com/</a></li>
+  <li>Latest release: 6.0.2146 (2015-05-28)</li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
@@ -47,43 +47,10 @@
 
 <ul>
   <li>
-    <p>3des-cbc</p>
+    <p>aes128-gcm@openssh.com</p>
   </li>
   <li>
-    <p>3des-ecb</p>
-  </li>
-  <li>
-    <p>3des-cfb</p>
-  </li>
-  <li>
-    <p>3des-ofb</p>
-  </li>
-  <li>
-    <p>3des-ctr</p>
-  </li>
-  <li>
-    <p>blowfish-cbc</p>
-  </li>
-  <li>
-    <p>blowfish-ecb</p>
-  </li>
-  <li>
-    <p>blowfish-cfb</p>
-  </li>
-  <li>
-    <p>blowfish-ofb</p>
-  </li>
-  <li>
-    <p>blowfish-ctr</p>
-  </li>
-  <li>
-    <p>aes128-cbc</p>
-  </li>
-  <li>
-    <p>aes192-cbc</p>
-  </li>
-  <li>
-    <p>aes256-cbc</p>
+    <p>aes256-gcm@openssh.com</p>
   </li>
   <li>
     <p>aes128-ctr</p>
@@ -95,79 +62,19 @@
     <p>aes256-ctr</p>
   </li>
   <li>
-    <p>rijndael128-cbc</p>
+    <p>aes128-cbc</p>
   </li>
   <li>
-    <p>rijndael192-cbc</p>
+    <p>aes192-cbc</p>
   </li>
   <li>
-    <p>rijndael256-cbc</p>
+    <p>aes256-cbc</p>
   </li>
   <li>
-    <p>rijndael-cbc@lysator.liu.se</p>
-  </li>
-  <li>
-    <p>twofish128-ctr</p>
-  </li>
-  <li>
-    <p>twofish128-cbc</p>
-  </li>
-  <li>
-    <p>twofish192-ctr</p>
-  </li>
-  <li>
-    <p>twofish192-cbc</p>
-  </li>
-  <li>
-    <p>twofish256-ctr</p>
-  </li>
-  <li>
-    <p>twofish256-cbc</p>
-  </li>
-  <li>
-    <p>twofish-cbc</p>
-  </li>
-  <li>
-    <p>twofish-ecb</p>
-  </li>
-  <li>
-    <p>twofish-cfb</p>
-  </li>
-  <li>
-    <p>twofish-ofb</p>
-  </li>
-  <li>
-    <p>cast128-cbc</p>
-  </li>
-  <li>
-    <p>cast128-ecb</p>
-  </li>
-  <li>
-    <p>cast128-cfb</p>
-  </li>
-  <li>
-    <p>cast128-ofb</p>
-  </li>
-  <li>
-    <p>idea-cbc</p>
-  </li>
-  <li>
-    <p>idea-ecb</p>
-  </li>
-  <li>
-    <p>idea-cfb</p>
-  </li>
-  <li>
-    <p>idea-ofb</p>
+    <p>3des-cbc</p>
   </li>
   <li>
     <p>arcfour</p>
-  </li>
-  <li>
-    <p>arcfour128</p>
-  </li>
-  <li>
-    <p>arcfour256</p>
   </li>
 </ul>
 
@@ -195,6 +102,12 @@
     <p>ssh-dss</p>
   </li>
   <li>
+    <p>ssh-dss-sha256@ssh.com</p>
+  </li>
+  <li>
+    <p>ssh-rsa-sha256@ssh.com</p>
+  </li>
+  <li>
     <p>ecdsa-sha2-nistp256</p>
   </li>
   <li>
@@ -202,6 +115,33 @@
   </li>
   <li>
     <p>ecdsa-sha2-nistp521</p>
+  </li>
+  <li>
+    <p>x509v3-rsa2048-sha256</p>
+  </li>
+  <li>
+    <p>x509v3-sign-rsa</p>
+  </li>
+  <li>
+    <p>x509v3-sign-dss</p>
+  </li>
+  <li>
+    <p>x509v3-sign-rsa-sha256@ssh.com</p>
+  </li>
+  <li>
+    <p>x509v3-sign-dss-sha256@ssh.com</p>
+  </li>
+  <li>
+    <p>x509v3-ecdsa-sha2-nistp256</p>
+  </li>
+  <li>
+    <p>x509v3-ecdsa-sha2-nistp384</p>
+  </li>
+  <li>
+    <p>x509v3-ecdsa-sha2-nistp521</p>
+  </li>
+  <li>
+    <p>ssh-ed25519</p>
   </li>
 </ul>
 
@@ -229,31 +169,19 @@
   <li>
     <p>ecdh-sha2-nistp521</p>
   </li>
+  <li>
+    <p>curve25519-sha256@libssh.org</p>
+  </li>
 </ul>
 
 <h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
 
 <ul>
   <li>
-    <p>hmac-sha1</p>
-  </li>
-  <li>
     <p>hmac-md5</p>
   </li>
   <li>
-    <p>hmac-ripemd160</p>
-  </li>
-  <li>
-    <p>hmac-sha1-96</p>
-  </li>
-  <li>
-    <p>hmac-md5-96</p>
-  </li>
-  <li>
-    <p>hmac-ripemd160-96</p>
-  </li>
-  <li>
-    <p>hmac-ripemd160@openssh.com</p>
+    <p>hmac-sha1</p>
   </li>
   <li>
     <p>hmac-sha2-256</p>
@@ -261,23 +189,11 @@
   <li>
     <p>hmac-sha2-512</p>
   </li>
-  <li>
-    <p>hmac-sha256@ssh.com</p>
-  </li>
-  <li>
-    <p>hmac-sha256-2@ssh.com</p>
-  </li>
-  <li>
-    <p>hmac-sha512@ssh.com</p>
-  </li>
 </ul>
 
 <h3 id="user-authentication-methods">User authentication methods</h3>
 
 <ul>
-  <li>
-    <p>rhosts</p>
-  </li>
   <li>
     <p>publickey</p>
   </li>
@@ -285,31 +201,16 @@
     <p>password</p>
   </li>
   <li>
-    <p>rhostsrsa</p>
-  </li>
-  <li>
-    <p>tis</p>
-  </li>
-  <li>
-    <p>kerberos</p>
-  </li>
-  <li>
-    <p>kerbtgt</p>
-  </li>
-  <li>
-    <p>securid</p>
-  </li>
-  <li>
-    <p>cryptocard</p>
-  </li>
-  <li>
     <p>keyboard-interactive</p>
+  </li>
+  <li>
+    <p>gssapi-with-mic</p>
   </li>
   <li>
     <p>hostbased</p>
   </li>
   <li>
-    <p>gssapi-with-mic</p>
+    <p>none</p>
   </li>
 </ul>
 
