@@ -36,71 +36,38 @@
 
 <ul>
   <li>Homepage: <a href="http://tinyssh.org/">http://tinyssh.org/</a></li>
-  <li>Latest release:  (2015-01-01)</li>
-  <li>Client: unknown</li>
-  <li>Server: unknown</li>
+  <li>
+    <p>Latest release:  (2015-05-01)</p>
+  </li>
+  <li>License: <a href="http://tinyssh.org/LICENCE">Public domain</a></li>
+  <li>Client: false</li>
+  <li>Server: true</li>
 </ul>
 
-<h2 id="supported-protocols">Supported protocols</h2>
-
-<h3 id="ciphers">Ciphers</h3>
-
+<h3 id="remarks">Remarks</h3>
 <ul>
-  <li>
-    <p>chacha20-poly1305@openssh.com</p>
-  </li>
-  <li>
-    <p>aes128-ctr</p>
-  </li>
-  <li>
-    <p>aes256-ctr</p>
-  </li>
+  <li>Minimalistic SSH implementation, still in alpha stage.</li>
 </ul>
 
-<h3 id="compression-formats">Compression formats</h3>
+<h3 id="supported-protocols">Supported protocols</h3>
 
-<ul>
-  <li>none</li>
-</ul>
+<h4 id="ciphers">Ciphers</h4>
+<p>chacha20-poly1305@openssh.com,  aes128-ctr,  aes256-ctr,  </p>
 
-<h3 id="hostkey-formats">Hostkey formats</h3>
+<h4 id="compression-formats">Compression formats</h4>
+<p>none,  </p>
 
-<ul>
-  <li>
-    <p>ssh-ed25519</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp256</p>
-  </li>
-</ul>
+<h4 id="hostkey-formats">Hostkey formats</h4>
+<p>ssh-ed25519,  ecdsa-sha2-nistp256,  </p>
 
-<h3 id="key-exchange-protocols">Key exchange protocols</h3>
+<h4 id="key-exchange-protocols">Key exchange protocols</h4>
+<p>curve25519-sha256@libssh.org,  ecdh-sha2-nistp256,  </p>
 
-<ul>
-  <li>
-    <p>curve25519-sha256@libssh.org</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp256</p>
-  </li>
-</ul>
+<h4 id="message-authentication-codes-macs">Message authentication codes (MACs)</h4>
+<p>chacha20-poly1305@openssh.com,  hmac-sha2-256,  </p>
 
-<h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
-
-<ul>
-  <li>
-    <p>chacha20-poly1305@openssh.com</p>
-  </li>
-  <li>
-    <p>hmac-sha2-256</p>
-  </li>
-</ul>
-
-<h3 id="user-authentication-methods">User authentication methods</h3>
-
-<ul>
-  <li>publickey</li>
-</ul>
+<h4 id="user-authentication-methods">User authentication methods</h4>
+<p>publickey,  </p>
 
 
       </div>

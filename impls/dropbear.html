@@ -36,147 +36,38 @@
 
 <ul>
   <li>Homepage: <a href="https://matt.ucc.asn.au/dropbear/dropbear.html">https://matt.ucc.asn.au/dropbear/dropbear.html</a></li>
-  <li>Latest release: 2014.66 (2014-10-23)</li>
+  <li>Latest release: 2015.67 (2015-01-28)</li>
+  <li>Version history: <a href="https://matt.ucc.asn.au/dropbear/CHANGES">https://matt.ucc.asn.au/dropbear/CHANGES</a> </li>
+  <li>License: <a href="https://secure.ucc.asn.au/hg/dropbear/raw-file/tip/LICENSE">MIT style</a></li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
 
-<h2 id="supported-protocols">Supported protocols</h2>
-
-<h3 id="ciphers">Ciphers</h3>
-
+<h3 id="remarks">Remarks</h3>
 <ul>
-  <li>
-    <p>aes128-ctr</p>
-  </li>
-  <li>
-    <p>3des-ctr</p>
-  </li>
-  <li>
-    <p>aes256-ctr</p>
-  </li>
-  <li>
-    <p>aes128-cbc</p>
-  </li>
-  <li>
-    <p>3des-cbc</p>
-  </li>
-  <li>
-    <p>aes256-cbc</p>
-  </li>
-  <li>
-    <p>twofish256-cbc</p>
-  </li>
-  <li>
-    <p>twofish-cbc</p>
-  </li>
-  <li>
-    <p>twofish128-cbc</p>
-  </li>
-  <li>
-    <p>blowfish-cbc</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
+  <li>Server and client for POSIX-based platforms.</li>
+  <li><a href="https://en.wikipedia.org/wiki/Dropbear_%28software%29">Wikipedia</a></li>
 </ul>
 
-<h3 id="compression-formats">Compression formats</h3>
+<h3 id="supported-protocols">Supported protocols</h3>
 
-<ul>
-  <li>
-    <p>zlib</p>
-  </li>
-  <li>
-    <p>zlib@openssh.com</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
+<h4 id="ciphers">Ciphers</h4>
+<p>aes128-ctr,  3des-ctr,  aes256-ctr,  aes128-cbc,  3des-cbc,  aes256-cbc,  twofish256-cbc,  twofish-cbc,  twofish128-cbc,  blowfish-cbc,  none,  </p>
 
-<h3 id="hostkey-formats">Hostkey formats</h3>
+<h4 id="compression-formats">Compression formats</h4>
+<p>zlib,  zlib@openssh.com,  none,  </p>
 
-<ul>
-  <li>
-    <p>ecdsa-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp521</p>
-  </li>
-  <li>
-    <p>ssh-rsa</p>
-  </li>
-  <li>
-    <p>ssh-dss</p>
-  </li>
-</ul>
+<h4 id="hostkey-formats">Hostkey formats</h4>
+<p>ecdsa-sha2-nistp256,  ecdsa-sha2-nistp384,  ecdsa-sha2-nistp521,  ssh-rsa,  ssh-dss,  </p>
 
-<h3 id="key-exchange-protocols">Key exchange protocols</h3>
+<h4 id="key-exchange-protocols">Key exchange protocols</h4>
+<p>curve25519-sha256@libssh.org,  ecdh-sha2-nistp521,  ecdh-sha2-nistp384,  ecdh-sha2-nistp256,  diffie-hellman-group1-sha1,  diffie-hellman-group14-sha1,  </p>
 
-<ul>
-  <li>
-    <p>curve25519-sha256@libssh.org</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp521</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group1-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group14-sha1</p>
-  </li>
-</ul>
+<h4 id="message-authentication-codes-macs">Message authentication codes (MACs)</h4>
+<p>hmac-sha2-256,  hmac-sha2-512,  hmac-sha1-96,  hmac-sha1,  hmac-md5,  none,  </p>
 
-<h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
-
-<ul>
-  <li>
-    <p>hmac-sha2-256</p>
-  </li>
-  <li>
-    <p>hmac-sha2-512</p>
-  </li>
-  <li>
-    <p>hmac-sha1-96</p>
-  </li>
-  <li>
-    <p>hmac-sha1</p>
-  </li>
-  <li>
-    <p>hmac-md5</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
-
-<h3 id="user-authentication-methods">User authentication methods</h3>
-
-<ul>
-  <li>
-    <p>publickey</p>
-  </li>
-  <li>
-    <p>password</p>
-  </li>
-  <li>
-    <p>keyboard-interactive</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
+<h4 id="user-authentication-methods">User authentication methods</h4>
+<p>publickey,  password,  keyboard-interactive,  none,  </p>
 
 
       </div>

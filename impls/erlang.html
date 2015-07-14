@@ -36,90 +36,38 @@
 
 <ul>
   <li>Homepage: <a href="http://www.erlang.org/doc/man/ssh.html">http://www.erlang.org/doc/man/ssh.html</a></li>
-  <li>Latest release: 3.1 (1900-01-01)</li>
-  <li>Client: unknown</li>
-  <li>Server: unknown</li>
+  <li>Latest release: 3.1 (OTP 17.4) (2014-12-10)</li>
+  <li>Version history: <a href="http://www.erlang.org/doc/apps/ssh/notes.html">http://www.erlang.org/doc/apps/ssh/notes.html</a> </li>
+  <li>License: <a href="http://www.erlang.org/EPLICENSE">Erlang Public License</a></li>
+  <li>Client: true</li>
+  <li>Server: true</li>
 </ul>
 
-<h2 id="supported-protocols">Supported protocols</h2>
-
-<h3 id="ciphers">Ciphers</h3>
-
+<h3 id="remarks">Remarks</h3>
 <ul>
-  <li>
-    <p>aes128-ctr</p>
-  </li>
-  <li>
-    <p>aes128-cbc</p>
-  </li>
-  <li>
-    <p>3des-cbc</p>
-  </li>
+  <li>Server and client implementation (and library) for the 
+<a href="http://www.erlang.org/">Erlang</a> programming language.</li>
 </ul>
 
-<h3 id="compression-formats">Compression formats</h3>
+<h3 id="supported-protocols">Supported protocols</h3>
 
-<ul>
-  <li>
-    <p>zlib</p>
-  </li>
-  <li>
-    <p>zlib@openssh.com</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
+<h4 id="ciphers">Ciphers</h4>
+<p>aes128-ctr,  aes128-cbc,  3des-cbc,  </p>
 
-<h3 id="hostkey-formats">Hostkey formats</h3>
+<h4 id="compression-formats">Compression formats</h4>
+<p>zlib,  zlib@openssh.com,  none,  </p>
 
-<ul>
-  <li>
-    <p>ssh-rsa</p>
-  </li>
-  <li>
-    <p>ssh-dss</p>
-  </li>
-</ul>
+<h4 id="hostkey-formats">Hostkey formats</h4>
+<p>ssh-rsa,  ssh-dss,  </p>
 
-<h3 id="key-exchange-protocols">Key exchange protocols</h3>
+<h4 id="key-exchange-protocols">Key exchange protocols</h4>
+<p>diffie-hellman-group1-sha1,  diffie-hellman-group-exchange-sha1,  </p>
 
-<ul>
-  <li>
-    <p>diffie-hellman-group1-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group-exchange-sha1</p>
-  </li>
-</ul>
+<h4 id="message-authentication-codes-macs">Message authentication codes (MACs)</h4>
+<p>hmac-sha2-256,  hmac-sha1,  </p>
 
-<h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
-
-<ul>
-  <li>
-    <p>hmac-sha2-256</p>
-  </li>
-  <li>
-    <p>hmac-sha1</p>
-  </li>
-</ul>
-
-<h3 id="user-authentication-methods">User authentication methods</h3>
-
-<ul>
-  <li>
-    <p>publickey</p>
-  </li>
-  <li>
-    <p>password</p>
-  </li>
-  <li>
-    <p>keyboard-interactive</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
+<h4 id="user-authentication-methods">User authentication methods</h4>
+<p>publickey,  password,  keyboard-interactive,  none,  </p>
 
 
       </div>

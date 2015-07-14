@@ -36,153 +36,40 @@
 
 <ul>
   <li>Homepage: <a href="http://mina.apache.org/sshd-project/">http://mina.apache.org/sshd-project/</a></li>
-  <li>Latest release: 0.13.0 (unknown)</li>
+  <li>
+    <p>Latest release: 0.14.0 (2015-03-10)</p>
+  </li>
+  <li>License: APL-2.0</li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
 
-<h2 id="supported-protocols">Supported protocols</h2>
-
-<h3 id="ciphers">Ciphers</h3>
-
+<h3 id="remarks">Remarks</h3>
 <ul>
-  <li>
-    <p>aes128-ctr</p>
-  </li>
-  <li>
-    <p>aes192-ctr</p>
-  </li>
-  <li>
-    <p>aes256-ctr</p>
-  </li>
-  <li>
-    <p>aes128-cbc</p>
-  </li>
-  <li>
-    <p>aes192-cbc</p>
-  </li>
-  <li>
-    <p>aes256-cbc</p>
-  </li>
-  <li>
-    <p>arcfour128</p>
-  </li>
-  <li>
-    <p>arcfour256</p>
-  </li>
-  <li>
-    <p>blowfish-cbc</p>
-  </li>
-  <li>
-    <p>3des-cbc</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
+  <li>Pure Java implementation.</li>
+  <li>2015-07-10: Does not seem to provide an overview of changes in new releases? But at least there was a
+<a href="http://www.mail-archive.com/users@mina.apache.org/msg05959.html">release announcment for 0.14.0</a>.</li>
 </ul>
 
-<h3 id="compression-formats">Compression formats</h3>
+<h3 id="supported-protocols">Supported protocols</h3>
 
-<ul>
-  <li>
-    <p>zlib</p>
-  </li>
-  <li>
-    <p>zlib@openssh.com</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
+<h4 id="ciphers">Ciphers</h4>
+<p>aes128-ctr,  aes192-ctr,  aes256-ctr,  aes128-cbc,  aes192-cbc,  aes256-cbc,  arcfour128,  arcfour256,  blowfish-cbc,  3des-cbc,  none,  </p>
 
-<h3 id="hostkey-formats">Hostkey formats</h3>
+<h4 id="compression-formats">Compression formats</h4>
+<p>zlib,  zlib@openssh.com,  none,  </p>
 
-<ul>
-  <li>
-    <p>ssh-rsa</p>
-  </li>
-  <li>
-    <p>ssh-dss</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp521</p>
-  </li>
-</ul>
+<h4 id="hostkey-formats">Hostkey formats</h4>
+<p>ssh-rsa,  ssh-dss,  ecdsa-sha2-nistp256,  ecdsa-sha2-nistp384,  ecdsa-sha2-nistp521,  </p>
 
-<h3 id="key-exchange-protocols">Key exchange protocols</h3>
+<h4 id="key-exchange-protocols">Key exchange protocols</h4>
+<p>diffie-hellman-group1-sha1,  diffie-hellman-group14-sha1,  diffie-hellman-group-exchange-sha1,  diffie-hellman-group-exchange-sha256,  ecdh-sha2-nistp256,  ecdh-sha2-nistp384,  ecdh-sha2-nistp521,  </p>
 
-<ul>
-  <li>
-    <p>diffie-hellman-group1-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group14-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group-exchange-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group-exchange-sha256</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp521</p>
-  </li>
-</ul>
+<h4 id="message-authentication-codes-macs">Message authentication codes (MACs)</h4>
+<p>hmac-md5,  hmac-md5-96,  hmac-sha1,  hmac-sha1-96,  hmac-sha2-256,  hmac-sha2-512,  </p>
 
-<h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
-
-<ul>
-  <li>
-    <p>hmac-md5</p>
-  </li>
-  <li>
-    <p>hmac-md5-96</p>
-  </li>
-  <li>
-    <p>hmac-sha1</p>
-  </li>
-  <li>
-    <p>hmac-sha1-96</p>
-  </li>
-  <li>
-    <p>hmac-sha2-256</p>
-  </li>
-  <li>
-    <p>hmac-sha2-512</p>
-  </li>
-</ul>
-
-<h3 id="user-authentication-methods">User authentication methods</h3>
-
-<ul>
-  <li>
-    <p>keyboard-interactive</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-  <li>
-    <p>password</p>
-  </li>
-  <li>
-    <p>publickey</p>
-  </li>
-  <li>
-    <p>gssapi-with-mic</p>
-  </li>
-</ul>
+<h4 id="user-authentication-methods">User authentication methods</h4>
+<p>keyboard-interactive,  none,  password,  publickey,  gssapi-with-mic,  </p>
 
 
       </div>

@@ -37,128 +37,37 @@
 <ul>
   <li>Homepage: <a href="http://www.libssh2.org/">http://www.libssh2.org/</a></li>
   <li>Latest release: 1.4.3 (2012-11-27)</li>
+  <li>Version history: <a href="http://www.libssh2.org/changes.html">http://www.libssh2.org/changes.html</a> </li>
+  <li>License: <a href="http://www.libssh2.org/license.html">BSD style</a></li>
   <li>Client: true</li>
-  <li>Server: true</li>
+  <li>Server: false</li>
 </ul>
 
-<h2 id="supported-protocols">Supported protocols</h2>
-
-<h3 id="ciphers">Ciphers</h3>
-
+<h3 id="remarks">Remarks</h3>
 <ul>
-  <li>
-    <p>aes256-cbc</p>
-  </li>
-  <li>
-    <p>rijndael-cbc@lysator.liu.se</p>
-  </li>
-  <li>
-    <p>aes192-cbc</p>
-  </li>
-  <li>
-    <p>aes128-cbc</p>
-  </li>
-  <li>
-    <p>3des-cbc</p>
-  </li>
-  <li>
-    <p>blowfish-cbc</p>
-  </li>
-  <li>
-    <p>cast128-cbc</p>
-  </li>
-  <li>
-    <p>arcfour</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
+  <li>C library for clients.</li>
+  <li>Not to be confused with the unrelated <a href="/impls/libssh.html">libssh</a></li>
 </ul>
 
-<h3 id="compression-formats">Compression formats</h3>
+<h3 id="supported-protocols">Supported protocols</h3>
 
-<ul>
-  <li>
-    <p>zlib</p>
-  </li>
-  <li>
-    <p>zlib@openssh.com</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
+<h4 id="ciphers">Ciphers</h4>
+<p>aes256-cbc,  rijndael-cbc@lysator.liu.se,  aes192-cbc,  aes128-cbc,  3des-cbc,  blowfish-cbc,  cast128-cbc,  arcfour,  none,  </p>
 
-<h3 id="hostkey-formats">Hostkey formats</h3>
+<h4 id="compression-formats">Compression formats</h4>
+<p>zlib,  zlib@openssh.com,  none,  </p>
 
-<ul>
-  <li>
-    <p>ssh-rsa</p>
-  </li>
-  <li>
-    <p>ssh-dss</p>
-  </li>
-</ul>
+<h4 id="hostkey-formats">Hostkey formats</h4>
+<p>ssh-rsa,  ssh-dss,  </p>
 
-<h3 id="key-exchange-protocols">Key exchange protocols</h3>
+<h4 id="key-exchange-protocols">Key exchange protocols</h4>
+<p>diffie-hellman-group1-sha1,  diffie-hellman-group14-sha1,  diffie-hellman-group-exchange-sha1,  </p>
 
-<ul>
-  <li>
-    <p>diffie-hellman-group1-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group14-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group-exchange-sha1</p>
-  </li>
-</ul>
+<h4 id="message-authentication-codes-macs">Message authentication codes (MACs)</h4>
+<p>hmac-sha1,  hmac-sha1-96,  hmac-md5,  hmac-md5-96,  hmac-ripemd160,  hmac-ripemd160@openssh.com,  none,  </p>
 
-<h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
-
-<ul>
-  <li>
-    <p>hmac-sha1</p>
-  </li>
-  <li>
-    <p>hmac-sha1-96</p>
-  </li>
-  <li>
-    <p>hmac-md5</p>
-  </li>
-  <li>
-    <p>hmac-md5-96</p>
-  </li>
-  <li>
-    <p>hmac-ripemd160</p>
-  </li>
-  <li>
-    <p>hmac-ripemd160@openssh.com</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
-
-<h3 id="user-authentication-methods">User authentication methods</h3>
-
-<ul>
-  <li>
-    <p>none</p>
-  </li>
-  <li>
-    <p>password</p>
-  </li>
-  <li>
-    <p>publickey</p>
-  </li>
-  <li>
-    <p>hostbased</p>
-  </li>
-  <li>
-    <p>keyboard-interactive</p>
-  </li>
-</ul>
+<h4 id="user-authentication-methods">User authentication methods</h4>
+<p>none,  password,  publickey,  hostbased,  keyboard-interactive,  </p>
 
 
       </div>

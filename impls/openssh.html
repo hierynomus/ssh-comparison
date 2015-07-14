@@ -37,236 +37,41 @@
 <ul>
   <li>Homepage: <a href="http://www.openssh.com/">http://www.openssh.com/</a></li>
   <li>Latest release: 6.7 (2014-10-06)</li>
+  <li>Version history: <a href="http://news.gmane.org/gmane.network.openssh.announce">http://news.gmane.org/gmane.network.openssh.announce</a> </li>
+  <li>License: BSD</li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
 
-<h2 id="supported-protocols">Supported protocols</h2>
-
-<h3 id="ciphers">Ciphers</h3>
-
+<h3 id="remarks">Remarks</h3>
 <ul>
-  <li>
-    <p>chacha20-poly1305@openssh.com</p>
-  </li>
-  <li>
-    <p>aes128-ctr</p>
-  </li>
-  <li>
-    <p>aes192-ctr</p>
-  </li>
-  <li>
-    <p>aes256-ctr</p>
-  </li>
-  <li>
-    <p>aes128-gcm@openssh.com</p>
-  </li>
-  <li>
-    <p>aes256-gcm@openssh.com</p>
-  </li>
-  <li>
-    <p>aes128-cbc</p>
-  </li>
-  <li>
-    <p>aes192-cbc</p>
-  </li>
-  <li>
-    <p>aes256-cbc</p>
-  </li>
-  <li>
-    <p>rijndael-cbc@lysator.liu.se</p>
-  </li>
-  <li>
-    <p>3des-cbc</p>
-  </li>
-  <li>
-    <p>arcfour</p>
-  </li>
-  <li>
-    <p>arcfour128</p>
-  </li>
-  <li>
-    <p>arcfour256</p>
-  </li>
-  <li>
-    <p>blowfish-cbc</p>
-  </li>
-  <li>
-    <p>cast128-cbc</p>
-  </li>
+  <li>Probably the most widely deployed SSH implementation.</li>
+  <li>There are actually two versions: Regular OpenSSH is part of OpenBSD.
+This version is hosted in the <a href="http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/">OpenBSD CVS repository</a>.
+For everybody else, there is “Portable OpenSSH”. This document is
+refering to the portable version, since that is what the majority
+of OpenSSH users is using (as they are not running OpenBSD).</li>
 </ul>
 
-<h3 id="compression-formats">Compression formats</h3>
+<h3 id="supported-protocols">Supported protocols</h3>
 
-<ul>
-  <li>
-    <p>zlib</p>
-  </li>
-  <li>
-    <p>zlib@openssh.com</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
+<h4 id="ciphers">Ciphers</h4>
+<p>chacha20-poly1305@openssh.com,  aes128-ctr,  aes192-ctr,  aes256-ctr,  aes128-gcm@openssh.com,  aes256-gcm@openssh.com,  aes128-cbc,  aes192-cbc,  aes256-cbc,  rijndael-cbc@lysator.liu.se,  3des-cbc,  arcfour,  arcfour128,  arcfour256,  blowfish-cbc,  cast128-cbc,  </p>
 
-<h3 id="hostkey-formats">Hostkey formats</h3>
+<h4 id="compression-formats">Compression formats</h4>
+<p>zlib,  zlib@openssh.com,  none,  </p>
 
-<ul>
-  <li>
-    <p>ssh-ed25519</p>
-  </li>
-  <li>
-    <p>ssh-ed25519-cert-v01@openssh.com</p>
-  </li>
-  <li>
-    <p>ssh-rsa</p>
-  </li>
-  <li>
-    <p>ssh-dss</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp521</p>
-  </li>
-  <li>
-    <p>ssh-rsa-cert-v01@openssh.com</p>
-  </li>
-  <li>
-    <p>ssh-dss-cert-v01@openssh.com</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp256-cert-v01@openssh.com</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp384-cert-v01@openssh.com</p>
-  </li>
-  <li>
-    <p>ecdsa-sha2-nistp521-cert-v01@openssh.com</p>
-  </li>
-  <li>
-    <p>ssh-rsa-cert-v00@openssh.com</p>
-  </li>
-  <li>
-    <p>ssh-dss-cert-v00@openssh.com</p>
-  </li>
-</ul>
+<h4 id="hostkey-formats">Hostkey formats</h4>
+<p>ssh-ed25519,  ssh-ed25519-cert-v01@openssh.com,  ssh-rsa,  ssh-dss,  ecdsa-sha2-nistp256,  ecdsa-sha2-nistp384,  ecdsa-sha2-nistp521,  ssh-rsa-cert-v01@openssh.com,  ssh-dss-cert-v01@openssh.com,  ecdsa-sha2-nistp256-cert-v01@openssh.com,  ecdsa-sha2-nistp384-cert-v01@openssh.com,  ecdsa-sha2-nistp521-cert-v01@openssh.com,  ssh-rsa-cert-v00@openssh.com,  ssh-dss-cert-v00@openssh.com,  </p>
 
-<h3 id="key-exchange-protocols">Key exchange protocols</h3>
+<h4 id="key-exchange-protocols">Key exchange protocols</h4>
+<p>curve25519-sha256@libssh.org,  diffie-hellman-group1-sha1,  diffie-hellman-group14-sha1,  diffie-hellman-group-exchange-sha1,  diffie-hellman-group-exchange-sha256,  ecdh-sha2-nistp256,  ecdh-sha2-nistp384,  ecdh-sha2-nistp521,  </p>
 
-<ul>
-  <li>
-    <p>curve25519-sha256@libssh.org</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group1-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group14-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group-exchange-sha1</p>
-  </li>
-  <li>
-    <p>diffie-hellman-group-exchange-sha256</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp256</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp384</p>
-  </li>
-  <li>
-    <p>ecdh-sha2-nistp521</p>
-  </li>
-</ul>
+<h4 id="message-authentication-codes-macs">Message authentication codes (MACs)</h4>
+<p>hmac-md5,  hmac-md5-96,  hmac-ripemd160,  hmac-sha1,  hmac-sha1-96,  hmac-sha2-256,  hmac-sha2-512,  umac-64@openssh.com,  umac-128@openssh.com,  hmac-md5-etm@openssh.com,  hmac-md5-96-etm@openssh.com,  hmac-ripemd160-etm@openssh.com,  hmac-sha1-etm@openssh.com,  hmac-sha1-96-etm@openssh.com,  hmac-sha2-256-etm@openssh.com,  hmac-sha2-512-etm@openssh.com,  umac-64-etm@openssh.com,  umac-128-etm@openssh.com,  </p>
 
-<h3 id="message-authentication-codes-macs">Message authentication codes (MACs)</h3>
-
-<ul>
-  <li>
-    <p>hmac-md5</p>
-  </li>
-  <li>
-    <p>hmac-md5-96</p>
-  </li>
-  <li>
-    <p>hmac-ripemd160</p>
-  </li>
-  <li>
-    <p>hmac-sha1</p>
-  </li>
-  <li>
-    <p>hmac-sha1-96</p>
-  </li>
-  <li>
-    <p>hmac-sha2-256</p>
-  </li>
-  <li>
-    <p>hmac-sha2-512</p>
-  </li>
-  <li>
-    <p>umac-64@openssh.com</p>
-  </li>
-  <li>
-    <p>umac-128@openssh.com</p>
-  </li>
-  <li>
-    <p>hmac-md5-etm@openssh.com</p>
-  </li>
-  <li>
-    <p>hmac-md5-96-etm@openssh.com</p>
-  </li>
-  <li>
-    <p>hmac-ripemd160-etm@openssh.com</p>
-  </li>
-  <li>
-    <p>hmac-sha1-etm@openssh.com</p>
-  </li>
-  <li>
-    <p>hmac-sha1-96-etm@openssh.com</p>
-  </li>
-  <li>
-    <p>hmac-sha2-256-etm@openssh.com</p>
-  </li>
-  <li>
-    <p>hmac-sha2-512-etm@openssh.com</p>
-  </li>
-  <li>
-    <p>umac-64-etm@openssh.com</p>
-  </li>
-  <li>
-    <p>umac-128-etm@openssh.com</p>
-  </li>
-</ul>
-
-<h3 id="user-authentication-methods">User authentication methods</h3>
-
-<ul>
-  <li>
-    <p>publickey</p>
-  </li>
-  <li>
-    <p>password</p>
-  </li>
-  <li>
-    <p>keyboard-interactive</p>
-  </li>
-  <li>
-    <p>gssapi-with-mic</p>
-  </li>
-  <li>
-    <p>hostbased</p>
-  </li>
-  <li>
-    <p>none</p>
-  </li>
-</ul>
+<h4 id="user-authentication-methods">User authentication methods</h4>
+<p>publickey,  password,  keyboard-interactive,  gssapi-with-mic,  hostbased,  none,  </p>
 
 
       </div>
