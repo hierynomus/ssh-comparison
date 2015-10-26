@@ -36,9 +36,9 @@
 
 <ul>
   <li>Homepage: <a href="http://www.erlang.org/doc/man/ssh.html">http://www.erlang.org/doc/man/ssh.html</a></li>
-  <li>Latest release: 3.1 (OTP 17.4) (2014-12-10)</li>
-  <li>Version history: <a href="http://www.erlang.org/doc/apps/ssh/notes.html">http://www.erlang.org/doc/apps/ssh/notes.html</a> </li>
-  <li>License: <a href="http://www.erlang.org/EPLICENSE">Erlang Public License</a></li>
+  <li>Latest release: 4.1.2 (OTP 18.1.2) (2015-10-16)</li>
+  <li>Version history: <a href="http://www.erlang.org/doc/apps/ssh/notes.html">http://www.erlang.org/doc/apps/ssh/notes.html</a></li>
+  <li>License: APL-2.0</li>
   <li>Client: true</li>
   <li>Server: true</li>
 </ul>
@@ -47,27 +47,28 @@
 <ul>
   <li>Server and client implementation (and library) for the 
 <a href="http://www.erlang.org/">Erlang</a> programming language.</li>
+  <li>Uses OpenSSL crypto library</li>
 </ul>
 
 <h3 id="supported-protocols">Supported protocols</h3>
 
 <h4 id="ciphers">Ciphers</h4>
-<p>aes128-ctr,  aes128-cbc,  3des-cbc,  </p>
+<p>aes128-ctr,  aes128-cbc,  3des-cbc,</p>
 
 <h4 id="compression-formats">Compression formats</h4>
-<p>zlib,  zlib@openssh.com,  none,  </p>
+<p>zlib,  zlib@openssh.com,  none,</p>
 
 <h4 id="hostkey-formats">Hostkey formats</h4>
-<p>ssh-rsa,  ssh-dss,  </p>
+<p>ssh-rsa,  ssh-dss,</p>
 
 <h4 id="key-exchange-protocols">Key exchange protocols</h4>
-<p>diffie-hellman-group1-sha1,  diffie-hellman-group-exchange-sha1,  </p>
+<p>ecdh-sha2-nistp256,  ecdh-sha2-nistp384,  ecdh-sha2-nistp521,  diffie-hellman-group-exchange-sha256,  diffie-hellman-group-exchange-sha1,  diffie-hellman-group14-sha1,  diffie-hellman-group1-sha1,</p>
 
 <h4 id="message-authentication-codes-macs">Message authentication codes (MACs)</h4>
-<p>hmac-sha2-256,  hmac-sha1,  </p>
+<p>hmac-sha2-256,  hmac-sha2-512,  hmac-sha1,</p>
 
 <h4 id="user-authentication-methods">User authentication methods</h4>
-<p>publickey,  password,  keyboard-interactive,  none,  </p>
+<p>publickey,  password,  keyboard-interactive,  none,</p>
 
 
       </div>
