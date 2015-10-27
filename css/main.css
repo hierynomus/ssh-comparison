@@ -468,10 +468,10 @@ tr:nth-child(even) td.no {
   background-color: #D46A6A; }
 
 tr:nth-child(odd) td.unknown {
-  background-color: red; }
+  background-color: #cccc00; }
 
 tr:nth-child(even) td.unknown {
-  background-color: #ff6666; }
+  background-color: #e6e600; }
 
 .table-header-rotated th.row-header {
   width: auto; }
