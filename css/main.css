@@ -529,3 +529,13 @@ tr:nth-child(even) td.unknown {
   width: 85px;
   /* 80 / cos(45) - 40 cos (45) = 85 where 80 is the height of the cell, 40 the width of the cell and 45 the transform angle*/
   text-align: left; }
+
+#impl-list {
+  border-collapse: collapse; }
+
+#impl-list table, th, td {
+  background-color: #F2F2F2;
+  padding: 0.2em 0.4em;
+  border: 1px solid #AAA;
+  text-align: left;
+  vertical-align: middle; }
