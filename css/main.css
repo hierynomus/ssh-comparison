@@ -452,6 +452,9 @@ pre {
   padding: 0px 10px 0px 10px;
   white-space: nowrap; }
 
+.impl-comparison td:nth-child(1) {
+  text-align: left; }
+
 .yes .no .unknown {
   text-align: center; }
 
@@ -475,16 +478,6 @@ tr:nth-child(even) td.unknown {
 
 .table-header-rotated th.row-header {
   width: auto; }
-
-.table-header-rotated td {
-  width: 40px;
-  /*
-    border-top: 1px solid #dddddd;
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
-  */
-  vertical-align: middle;
-  text-align: center; }
 
 .table-header-rotated th.rotate {
   height: 120px;
