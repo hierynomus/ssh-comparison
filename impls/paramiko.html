@@ -36,8 +36,9 @@
 
 <ul>
   <li>Homepage: <a href="http://www.paramiko.org/">http://www.paramiko.org/</a></li>
-  <li>Latest release: 1.15.3 (2015-10-02)</li>
+  <li>Latest release: 1.16.0 (2015-11-04)</li>
   <li>Version history: <a href="http://www.paramiko.org/changelog.html">http://www.paramiko.org/changelog.html</a></li>
+  <li>Source repository: <a href="https://github.com/paramiko/paramiko">https://github.com/paramiko/paramiko</a></li>
   <li>License: LGPL-2.1</li>
   <li>Client: true</li>
   <li>Server: true</li>
@@ -52,7 +53,7 @@
 <h3 id="supported-protocols">Supported protocols</h3>
 
 <h4 id="ciphers">Ciphers</h4>
-<p>aes128-ctr, aes256-ctr, blowfish-cbc, aes128-cbc, aes256-cbc, 3des-cbc, arcfour128, arcfour256</p>
+<p>aes128-ctr, aes192-ctr, aes256-ctr, aes128-cbc, blowfish-cbc, aes192-cbc, aes256-cbc, 3des-cbc, arcfour128, arcfour256</p>
 
 <h4 id="compression-formats">Compression formats</h4>
 <p>zlib@openssh.com, zlib, none</p>
@@ -61,10 +62,10 @@
 <p>ssh-rsa, ssh-dss, ecdsa-sha2-nistp256</p>
 
 <h4 id="key-exchange-protocols">Key exchange protocols</h4>
-<p>diffie-hellman-group1-sha1, diffie-hellman-group14-sha1, diffie-hellman-group-exchange-sha1, gss-group1-sha1-<em>, gss-group14-sha1-</em>, gss-gex-sha1-*</p>
+<p>diffie-hellman-group1-sha1, diffie-hellman-group14-sha1, diffie-hellman-group-exchange-sha1, diffie-hellman-group-exchange-sha256, gss-group1-sha1-<em>, gss-group14-sha1-</em>, gss-gex-sha1-*</p>
 
 <h4 id="message-authentication-codes-macs">Message authentication codes (MACs)</h4>
-<p>hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96</p>
+<p>hmac-sha2-256, hmac-sha2-512, hmac-md5, hmac-sha1-96, hmac-md5-96, hmac-sha1</p>
 
 <h4 id="user-authentication-methods">User authentication methods</h4>
 <p>publickey, password, keyboard-interactive, gssapi-with-mic, gssapi-keyex, none</p>
