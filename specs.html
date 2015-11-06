@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>SSH related specifications</title>
+  <meta name="description" content="A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/specs.html">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">SSH implementation comparison</a>
+
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <table>
+
+  <tr>
+  <td><a href="http://git.libssh.org/projects/libssh.git/tree/doc/curve25519-sha256@libssh.org.txt">libssh</a>
+  
+  </td>
+  <td>The key exchange methode curve25519-sha256@libssh.org</td>
+  </tr>
+
+  <tr>
+  <td><a href="http://www.openssh.com/specs.html">OpenSSH</a>
+  
+  </td>
+  <td>Specifications implemented by OpenSSH, including information about some of their SSH extensions</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4250">RFC 4250</a>
+  
+  </td>
+  <td>The Secure Shell (SSH) Protocol Assigned Numbers</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4251">RFC 4251</a>
+  
+  </td>
+  <td>The Secure Shell (SSH) Protocol Architecture</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4252">RFC 4252</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=4252">Errata</a>)
+  </td>
+  <td>The Secure Shell (SSH) Authentication Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4253">RFC 4253</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=4253">Errata</a>)
+  </td>
+  <td>The Secure Shell (SSH) Transport Layer Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4254">RFC 4254</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=4254">Errata</a>)
+  </td>
+  <td>The Secure Shell (SSH) Connection Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4255">RFC 4255</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=4255">Errata</a>)
+  </td>
+  <td>Using DNS to Securely Publish Secure Shell (SSH) Key Fingerprints</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4256">RFC 4256</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=4256">Errata</a>)
+  </td>
+  <td>Generic Message Exchange Authentication for the Secure Shell Protocol (SSH)</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4335">RFC 4335</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=4335">Errata</a>)
+  </td>
+  <td>The Secure Shell (SSH) Session Channel Break Extension</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4344">RFC 4344</a>
+  
+  </td>
+  <td>The Secure Shell (SSH) Transport Layer Encryption Modes</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4345">RFC 4345</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=4345">Errata</a>)
+  </td>
+  <td>Improved Arcfour Modes for the Secure Shell (SSH) Transport Layer Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4419">RFC 4419</a>
+  
+  </td>
+  <td>Diffie-Hellman Group Exchange for the Secure Shell (SSH) Transport Layer Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4432">RFC 4432</a>
+  
+  </td>
+  <td>RSA Key Exchange for the Secure Shell (SSH) Transport Layer Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4462">RFC 4462</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=4462">Errata</a>)
+  </td>
+  <td>Generic Security Service Application Program Interface (GSS-API) Authentication and Key Exchange for the Secure Shell (SSH) Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4716">RFC 4716</a>
+  
+  </td>
+  <td>The Secure Shell (SSH) Public Key File Format</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc4819">RFC 4819</a>
+  
+  </td>
+  <td>Secure Shell Public Key Subsystem</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc5647">RFC 5647</a>
+  
+  </td>
+  <td>AES Galois Counter Mode for the Secure Shell Transport Layer Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc5656">RFC 5656</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=5656">Errata</a>)
+  </td>
+  <td>Elliptic Curve Algorithm Integration in the Secure Shell Transport Layer</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc6187">RFC 6187</a>
+  
+  </td>
+  <td>X.509v3 Certificates for Secure Shell Authentication</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc6594">RFC 6594</a>
+  
+  </td>
+  <td>Use of the SHA-256 Algorithm with RSA, Digital Signature Algorithm (DSA), and Elliptic Curve DSA (ECDSA) in SSHFP Resource Records</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc6668">RFC 6668</a>
+  
+  </td>
+  <td>SHA-2 Data Integrity Verification for the Secure Shell (SSH) Transport Layer Protocol</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://tools.ietf.org/html/rfc7479">RFC 7479</a>
+   (<a href="https://www.rfc-editor.org/errata_search.php?rfc=7479">Errata</a>)
+  </td>
+  <td>Using Ed25519 in SSHFP Resource Records</td>
+  </tr>
+
+</table>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">SSH implementation comparison</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>SSH implementation comparison</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">A technical comparison of various SSH implementations (clients, servers and libraries), in terms of support SSH crypto protocols.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
